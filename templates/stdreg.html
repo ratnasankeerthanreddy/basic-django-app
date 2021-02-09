@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            Student register
+        </title>
+    </head>
+    <body>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            Name : <input type="text" name='name'><br>
+            Rollno: <input type="text" name='rollno'><br>
+            <input type="radio" name='stream' value="Medicine" checked> Medicine
+            <input type="radio" name='stream' value="Non-Medicine" > Non-Medicine
+            <input type="radio" name='stream' value="Engineering" > Engineering
+            <input type="radio" name='stream' value="humanities" > humanities <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
